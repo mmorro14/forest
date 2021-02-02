@@ -4,14 +4,24 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: index.md
+  label: Home
 - type: directory
   path: docs
   label: Docs
   create: all
   match: "**/*"
+- type: jekyll-pages
+  label: Jekyll Pages
+  create: all
+  match: "**/*"
+  templates:
+  - children-page
 - type: document
-  path: index.md
-  label: Home
+  path: email
+  label: Email
+  match: "**/*"
 - type: document
   path: README.md
   label: README
