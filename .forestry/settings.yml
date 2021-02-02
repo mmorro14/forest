@@ -15,13 +15,11 @@ sections:
 - type: jekyll-pages
   label: Jekyll Pages
   create: all
-  match: "**/*"
   templates:
   - children-page
 - type: document
   path: email
   label: Email
-  match: "**/*"
 - type: document
   path: README.md
   label: README
