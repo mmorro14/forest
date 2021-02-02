@@ -15,8 +15,6 @@ sections:
 - type: jekyll-pages
   label: Jekyll Pages
   create: all
-  templates:
-  - children-page
 - type: document
   path: email
   label: Email
